@@ -18,7 +18,7 @@ set -o vi
 
 # Source ble.sh for bash autocomplete
 # Config settings can be changed in ~/.blerc
-[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh
+#[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh
 
 # Source script to have fancy ls colors
 source ~/.dotfiles/bash/lscolors.sh
@@ -103,3 +103,5 @@ fi
 
 # Needed for ble.sh, should be at EOF
 [[ ${BLE_VERSION-} ]] && ble-attach
+
+export STM32_PRG_PATH=/home/zuidec/Programs/st/STM32CubeProgrammer/bin

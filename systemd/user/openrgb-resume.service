@@ -1,0 +1,12 @@
+[Unit]
+Description=Set OpenRGB profile on resume
+After=suspend.target
+
+[Service]
+User=zuidec
+Type=oneshot
+ExecStart=/bin/bash -c "sleep 5 && /usr/bin/openrgb -p WOK_7900xtx.orp"
+TimeoutSec=20
+
+[Install]
+WantedBy=systemd-suspend.target
