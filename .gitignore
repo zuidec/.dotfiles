@@ -1,3 +1,4 @@
 *.tar
-glow/
 coc/
+tmux/.tmux/resurrect
+tmux/.tmux/plugins

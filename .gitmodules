@@ -6,3 +6,6 @@
 	url = git@github.com:zuidec/nvim.git
 	branch = main
 	update = rebase
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
